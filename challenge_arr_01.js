@@ -10,6 +10,7 @@ Verwenden Sie dafür die untenstehenden Arrays
 
 const controls = ["<", "</", ">"];
 const tags = ["html","head","head","body","h1","h1","p","p","p","p","ul","li","li","li","li","ul","body","html"];
+let stack = [];
 
 // Ziel --> "<html><head></head><body><p></p></body></html>"; 
  
@@ -28,6 +29,12 @@ function getHTML(){
 
     return htmlStr; 
   
+}
+
+//Modul : open || close ?
+
+function isOpenTag(params) {
+    
 }
 
 // Modul: Zusammenbau: <tagStr> --> Tests:
